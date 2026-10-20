@@ -1,6 +1,6 @@
 # 验证记录
 
-验证日期：2026-10-20（Asia/Shanghai）。环境：macOS ARM、Chromium Headless Shell 151 / Playwright；本地静态服务与 file:// 两种方式。
+验证日期：2026-10-20（Asia/Shanghai）。环境：macOS ARM、Chromium Headless Shell 131.0.6778.33 / Playwright 1.49.1；本地静态服务、file:// 与线上 GitHub Pages 三种方式。
 
 ## 已完成且通过
 
@@ -17,6 +17,9 @@
 - 浏览器记录中未发现脚本错误与 4xx/5xx 资源响应。
 - 四张 SVG 已渲染为 PNG，核对蒸馏总览、P1–P4 矩阵及网页五章代表截图，无文本重叠或切断关键流程。
 - GitHub Pages 静态产物已本地生成并检查所需资源存在；源码压缩包包含隐藏的工作流目录。
+- 2026-10-20 已推送到 `Anglejuebi/BRIGHT-Distillation` 的 `main` 分支，工作流 `Publish research report to Pages`（run 39369738557）全部步骤成功（configure-pages、upload-pages-artifact、deploy-pages 均 success）。
+- 线上地址 <https://anglejuebi.github.io/BRIGHT-Distillation/> 实测 HTTP 200；`styles.css`、`app.js`、`data/research-data.js`、`assets/spatial-map.svg` 均返回 200。
+- 线上 Chromium 实测：标题、五章、无横向溢出（1440×900）；例数/占比切换、16 区同步选择、方法弹窗与 Esc 关闭正常；无脚本错误、无控制台错误、无失败请求。
 
 ## 交付前的代表截图
 
@@ -26,8 +29,7 @@
 
 - 未执行训练、推理或统计分析，没有真实性能数据。
 - 两条额外交叉配对、具体 CLS 聚合算子、教师每 tile 的 Patch 目标构造、投影维度与损失权重尚未获得原代码验证。
-- 未创建远端仓库、未推送、未实际运行 GitHub Actions；部署上线状态未验证。
-- 未在 Safari/Firefox、物理投影仪、真实手机、屏幕阅读器上验证；未执行完整 WCAG 审计、硬件性能基准或逐页打印 PDF 检查。
+- 已在 Chromium 线上验证；尚未在 Safari/Firefox、物理投影仪、真实手机、屏幕阅读器上验证，未执行完整 WCAG 审计、硬件性能基准或逐页打印 PDF 检查。
 - 浏览器全屏由用户手势和宿主窗口能力决定，内嵌环境可能不可用；已提供失败提示，不影响演示模式。
 
 检查范围如上，不将自动化交互通过等同于研究方法正确性或正式无障碍认证。

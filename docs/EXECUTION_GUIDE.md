@@ -57,7 +57,7 @@ python3 scripts/serve.py
 
 ## GitHub Pages 部署步骤
 
-本交付只生成部署配置，未创建远端仓库、未推送、未公开发布。工作流参考 [GitHub 官方自定义 Pages 工作流文档](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages)，2026-10-20 查阅。
+本交付已按用户授权部署到 `Anglejuebi/BRIGHT-Distillation`，线上地址 <https://anglejuebi.github.io/BRIGHT-Distillation/>，Pages Source 已设为 GitHub Actions，工作流执行成功。以下步骤保留作为复现与迁移说明。工作流参考 [GitHub 官方自定义 Pages 工作流文档](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages)，2026-10-20 查阅。
 
 1. 在已授权的账户下选定仓库，把**项目目录中的内容**作为仓库根目录。不要把压缩包外层目录一起作为额外一层上传；必须包含隐藏的 `.github/workflows/pages.yml`。
 2. 默认工作流监听 `main`。若实际默认分支不同，改工作流中的 `branches` 后再推送。

@@ -8,4 +8,6 @@
 
 目录：`assets/` 可引用 SVG/PNG，`data/` 计数与结果登记模板，`scripts/` 检查/预览/打包，`.github/workflows/pages.yml` 部署配置。
 
-本项目只制作网页与研究呈现，没有运行训练或产生任何性能数值；两条主对齐关系来自用户补充，剩余交叉配对与具体算子保留待核对标记。未创建 GitHub 仓库，未推送，未上线。
+本项目只制作网页与研究呈现，没有运行训练或产生任何性能数值；两条主对齐关系来自用户补充，剩余交叉配对与具体算子保留待核对标记。
+
+已通过 SSH 部署到 [Anglejuebi/BRIGHT-Distillation](https://github.com/Anglejuebi/BRIGHT-Distillation)，GitHub Pages 线上地址：<https://anglejuebi.github.io/BRIGHT-Distillation/>（2026-10-20 发布）。
