@@ -1,0 +1,9 @@
+stage,group,cohort,task,metric,value,ci_low,ci_high,seed,n_test,top_n,protocol_id,source
+standalone,1007,ALL,TBD,AUROC,,,,,,,,
+standalone,ex,ALL,TBD,AUROC,,,,,,,,
+sngp,SNGP-1007,ALL,TBD,AUROC,,,,,,,,
+sngp,SNGP-ex,ALL,TBD,AUROC,,,,,,,,
+pipeline,P1,ALL,TBD,AUROC,,,,,,,,
+pipeline,P2,ALL,TBD,AUROC,,,,,,,,
+pipeline,P3,ALL,TBD,AUROC,,,,,,,,
+pipeline,P4,ALL,TBD,AUROC,,,,,,,,
